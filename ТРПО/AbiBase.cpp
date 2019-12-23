@@ -88,25 +88,16 @@ void AbiBase()
 		cout << "Удаление" << endl;
 		{
 			ifstream file_in;
-			ifstream fil;
-			ifstream ilf;
-			ifstream fiile;
-			ifstream fille;
+		
 			file_in.open("table.txt");
-			fil.open("datr.txt");
-			ilf.open("srball.txt");
-			fiile.open("kod.txt");
-			fille.open("naz.txt");
+
 			cout << "Введите номер строки для удаления :" << endl;
 			int i_number_line_delete = 0, inld = 0, inumd = 0, inlid = 0, inuld = 0;
 			cin >> i_number_line_delete;
-			inld = i_number_line_delete;
-			inumd = i_number_line_delete;
-			inlid = i_number_line_delete;
-			inuld = i_number_line_delete;
-			int i_number_line_now = 0, inln = 0, inuml = 0, inlin = 0, inuln = 0;
-			string linee, lne, nline, dline, n_line;
-			string line_file_text, lft, line_f, line_fi, line_fie;
+		
+			int i_number_line_now = 0;
+			string linee;
+			string line_file_text;
 			
 		
 			while (getline(file_in, linee))
