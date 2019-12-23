@@ -1,0 +1,139 @@
+#include <iostream> 
+#include <fstream> 
+#include <string> 
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+  SetConsoleCP(1251); // Команда для установки кодовой страницы win-cp 1251 в поток ввода
+  SetConsoleOutputCP(1251); // команда для установки кодовой страницы 1251 в поток вывода
+  setlocale(LC_ALL , "rus");
+
+	char a, c;
+	while (a = '0')
+	{
+		cout << "Нажмите 'r' для отображения данных." << endl;
+		cout << "Нажмите 'w' для записи данных в файл." << endl;
+		cin >> c;
+		switch (c)
+		{
+		
+		case 'r':
+		{
+			string b;
+			ifstream Table("table.txt");
+			getline(Table, b);
+			cout << b << endl;
+			while (!Table.eof())
+
+			{
+				getline(Table, b);
+				cout << b << endl;
+			}
+			Table.close();
+			cout << endl << "Нажмите 'e' для закрытия программы." << endl;
+			break;
+		}
+
+		case 'w':
+		{
+			string f;
+			ofstream d("table.txt", ios_base::app);
+			cout << "Введите Фамилию, Имя и Отчество:" << endl;
+			cin >> f;
+			d <<"Фамилия, Имя и Отчество:" << f;
+			cout << "Введите Имя и Отчество:";
+			cin >> f;
+			d << " " << f ;
+			system("cls");
+			cout << "Введите Отчество:";
+			cin >> f;
+			d << " " << f << endl;
+			system("cls");
+			cout << "Введите рост:" << endl;
+			cin >> f;
+			d << "Рост:" << f << endl;
+			system("cls");
+			cout << "Введите вес:" << endl;
+			cin >> f;
+			d << "Вес:" << f << endl << endl;
+			d.close();
+			system("cls");
+			cout <<endl<< "Нажмите 'e' для закрытия программы." << endl;
+			break;
+		}
+
+		case 'e':
+		{system("pause");
+		return 0;
+		break;
+		}
+		}
+	}
+
+}
+
+
+
+#include <iomanip>
+
+
+   cout << "ID# " << setw( 22 ) << left << "ATTRIBUTE_NAME" 
+                        << setw( 8 ) << "FLAG"
+                        << setw( 6 ) << "VALUE"
+                        << setw( 6 ) << "WORST"
+                        << setw( 7 ) << "THRESH"
+                        << setw( 9 ) << "TYPE"
+                        << setw( 8 ) << "UPDATE"
+                        << setw( 12 ) << "WHEN_FAILED"
+                        << "RAW_VALUE" 
+                        << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		ILE* f;
+	char s[N], i;
+	unsigned short line, word, flag;
+	line = 0;
+	f = fopen("table.txt", "r");
+	while (fgets(s, N, f) != NULL ){
+	line += 1;
+		
+		word = 0;
+		flag = 0;
+		if ( i < strlen(s), i=strlen(s)+2)
+			 {
+			
+	
+			}	
+
+		
+	}
+	cout << "ID# " <<setw(i) << left << "ФИО Абитуриента"
+		<< setw(15) << "Дата Рождения"
+		<< setw(10) << "Ср.Балл"
+		<< setw(20) << "Код специальности"
+		<< setw(40) << "Название специальности"
+		<< endl;
+			ifstream Table("table.txt");
+	while (!Table.eof())
+	{
+		cout<<" " << v++<<"  ";
+		getline(Table, b);
+		cout << b << endl;
+	}
+	Table.close();
+	fclose(f);
