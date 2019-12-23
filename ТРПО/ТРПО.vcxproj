@@ -152,22 +152,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AbiBase.cpp" />
-    <ClCompile Include="AbiBaseInput.cpp" />
-    <ClCompile Include="AbiBaseUnit.cpp" />
     <ClCompile Include="AbiBaseView.cpp" />
-    <ClCompile Include="ADDSERV.cpp" />
+    <ClCompile Include="Equipment.cpp" />
+    <ClCompile Include="Repair.cpp" />
     <ClCompile Include="RepareBase.cpp" />
     <ClCompile Include="SpecBase.cpp" />
+    <ClCompile Include="SpecOut.cpp" />
+    <ClCompile Include="Work.cpp" />
     <ClCompile Include="ТРПО.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbiBase.h" />
-    <ClInclude Include="AbiBaseInput.h" />
-    <ClInclude Include="AbiBaseUnit.h" />
     <ClInclude Include="AbiBaseView.h" />
-    <ClInclude Include="ADDSERV.h" />
+    <ClInclude Include="Equipment.h" />
+    <ClInclude Include="Repair.h" />
     <ClInclude Include="RepareBase.h" />
     <ClInclude Include="SpecBase.h" />
+    <ClInclude Include="SpecOut.h" />
+    <ClInclude Include="Work.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
